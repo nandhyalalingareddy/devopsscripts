@@ -14,7 +14,7 @@ sudo wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
 tar -zxvf latest-unix.tar.gz     
 
 ##Rename the extracted Nexus setup folder to nexus
-sudo mv /opt/nexus-3.76.1-01/ /opt/nexus
+sudo mv /opt/nexus-3.77.0-08/ /opt/nexus
 
 ##As security practice, not to run nexus service using root user, so lets create new user named nexus to run nexus service
 sudo adduser nexus   --> give password
