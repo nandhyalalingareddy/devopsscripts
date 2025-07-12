@@ -9,7 +9,7 @@ curl -Lo kops https://github.com/kubernetes/kops/releases/download/v1.30.3/kops-
 chmod +x kops
 sudo mv kops /usr/local/bin/
 kops version
-curl -LO "https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.29.0/2024-04-12/bin/linux/amd64/kubectl
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 kubectl version --client
